@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s7Q-RS-DEG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Songs-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="47" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NNg-aX-jdF">
+                                <rect key="frame" x="0.0" y="47" width="375" height="620"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MusicPlayerCell" rowHeight="100" id="HHt-4N-jKo" userLabel="MusicPlayerCell" customClass="MusicPlayerCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HHt-4N-jKo" id="o2a-WJ-m4e">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VIRTUSAPOLARIS-Logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dyK-vi-F0J">
+                                                    <rect key="frame" x="5" y="5" width="90" height="90"/>
+                                                    <color key="backgroundColor" red="0.91429602580000002" green="0.91429602580000002" blue="0.91429602580000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="RJe-Nr-vwe"/>
+                                                        <constraint firstAttribute="width" constant="90" id="Zke-Uq-c55"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgE-EL-5GV">
+                                                    <rect key="frame" x="103" y="8" width="231" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VirtusaPolaris" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wdu-Rv-xJn">
+                                                    <rect key="frame" x="103" y="37" width="231" height="41"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Wdu-Rv-xJn" firstAttribute="top" secondItem="o2a-WJ-m4e" secondAttribute="topMargin" constant="29" id="9O9-kd-nMB"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Wdu-Rv-xJn" secondAttribute="bottom" constant="14" id="H4M-w0-Jk4"/>
+                                                <constraint firstItem="UgE-EL-5GV" firstAttribute="leading" secondItem="Wdu-Rv-xJn" secondAttribute="leading" id="I4K-eU-NDC"/>
+                                                <constraint firstItem="Wdu-Rv-xJn" firstAttribute="top" secondItem="UgE-EL-5GV" secondAttribute="bottom" constant="8" symbolic="YES" id="M2V-UK-NXu"/>
+                                                <constraint firstItem="Wdu-Rv-xJn" firstAttribute="leading" secondItem="dyK-vi-F0J" secondAttribute="trailing" constant="8" id="N1U-Y1-dhw"/>
+                                                <constraint firstItem="dyK-vi-F0J" firstAttribute="leading" secondItem="o2a-WJ-m4e" secondAttribute="leading" constant="5" id="TbF-6r-c83"/>
+                                                <constraint firstItem="dyK-vi-F0J" firstAttribute="top" secondItem="o2a-WJ-m4e" secondAttribute="top" constant="5" id="Xt1-ay-cku"/>
+                                                <constraint firstItem="UgE-EL-5GV" firstAttribute="trailing" secondItem="Wdu-Rv-xJn" secondAttribute="trailing" id="k7a-8m-LYn"/>
+                                                <constraint firstItem="Wdu-Rv-xJn" firstAttribute="trailing" secondItem="o2a-WJ-m4e" secondAttribute="trailingMargin" id="xoF-O1-Wjg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryName" destination="UgE-EL-5GV" id="5V6-jK-uqJ"/>
+                                            <outlet property="songName" destination="Wdu-Rv-xJn" id="V76-zx-NRM"/>
+                                            <outlet property="tablecellImageView" destination="dyK-vi-F0J" id="ti3-Q0-IJV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="n5t-4r-cLF"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="52V-0a-Ngq"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Pgf-V7-zcM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Bkj-l4-0SE"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pgf-V7-zcM" secondAttribute="trailing" id="80I-Kj-Ids"/>
+                            <constraint firstItem="NNg-aX-jdF" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="HhF-Sa-BMb"/>
+                            <constraint firstItem="NNg-aX-jdF" firstAttribute="top" secondItem="Pgf-V7-zcM" secondAttribute="bottom" constant="-61" id="PbH-YV-645"/>
+                            <constraint firstItem="NNg-aX-jdF" firstAttribute="leading" secondItem="Pgf-V7-zcM" secondAttribute="leading" id="SQo-4B-hDl"/>
+                            <constraint firstItem="NNg-aX-jdF" firstAttribute="trailing" secondItem="Pgf-V7-zcM" secondAttribute="trailing" id="UXn-Th-Aj4"/>
+                            <constraint firstItem="Pgf-V7-zcM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fWg-VK-WG8"/>
+                            <constraint firstItem="Pgf-V7-zcM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="std-pp-Zc0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Songs" id="f48-Tf-wuz"/>
+                    <connections>
+                        <outlet property="musicPlayerTableview" destination="NNg-aX-jdF" id="7nH-0H-iZV"/>
+                        <outlet property="searchDisplayController" destination="haV-0e-WA1" id="LC6-Lc-EZt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="3bC-i6-rxq">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="oYR-aE-zBo"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="xRa-Rz-NYh"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="Bmr-Se-FOn"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="YyO-pa-GEl"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="haV-0e-WA1">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="8Ku-K5-caz"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="vKT-0q-hfw"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="DWS-zs-qB2"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="tRg-oL-z2R"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="991.20000000000005" y="37.331334332833585"/>
+        </scene>
+        <!--Song Lyrics View Controller-->
+        <scene sceneID="Rmf-L2-sjl">
+            <objects>
+                <viewController storyboardIdentifier="SongLyricsViewController" id="iOX-Dw-3ZG" customClass="SongLyricsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OTS-0l-KGD"/>
+                        <viewControllerLayoutGuide type="bottom" id="kNH-3D-f75"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E9s-Z4-2PA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VIRTUSAPOLARIS-Logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uyy-d0-dJs">
+                                <rect key="frame" x="7" y="10" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.91429602580000002" green="0.91429602580000002" blue="0.91429602580000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="EpX-oZ-jGj"/>
+                                    <constraint firstAttribute="width" constant="90" id="XLF-Hr-2ni"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69D-ZY-nJ0">
+                                <rect key="frame" x="105" y="33.5" width="264" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VirtusaPolaris" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NW3-Yb-Qwv">
+                                <rect key="frame" x="105" y="62.5" width="264" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="5gC-wn-1LE">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <color key="backgroundColor" red="0.91429602580000002" green="0.91429602580000002" blue="0.91429602580000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Polaris Consulting &amp; Services Limited was incorporated in 1993 by Mr.Ravi Dehariya (Jabalpur Dist). It was one of the first vendors that Citi Group chose to partner with, when it entered India.[9] Simultaneously, Citigroup started its own company called COSL (Citibank Overseas Software Ltd) to utilize the intellectual capital at a competitive cost in India. COSL, later renamed as Orbitech, was then merged with Polaris. In 2003, Polaris launched its core product portfolio, IntellectTM. In November 2011, the organization changed its name from Polaris Software Labs Limited to Polaris Financial Technology Limited to highlight its primary domain of operation.On March 3, 2016, Virtusa Corporation acquired a majority stake in Polaris Consulting &amp; Services Limited. VirtusaPolaris is the market facing brand of Virtusa Corporation and Polaris Consulting &amp; Services Limited</mutableString>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="69D-ZY-nJ0" firstAttribute="trailing" secondItem="NW3-Yb-Qwv" secondAttribute="trailing" id="59s-xG-uBz"/>
+                            <constraint firstItem="NW3-Yb-Qwv" firstAttribute="leading" secondItem="uyy-d0-dJs" secondAttribute="trailing" constant="8" id="CNK-GH-JOj"/>
+                            <constraint firstItem="kNH-3D-f75" firstAttribute="top" secondItem="uyy-d0-dJs" secondAttribute="bottom" constant="567" id="CSt-mL-klh"/>
+                            <constraint firstItem="uyy-d0-dJs" firstAttribute="leading" secondItem="E9s-Z4-2PA" secondAttribute="leadingMargin" constant="-9" id="Hlc-48-enp"/>
+                            <constraint firstAttribute="trailing" secondItem="5gC-wn-1LE" secondAttribute="trailing" id="J7h-FL-YVH"/>
+                            <constraint firstItem="5gC-wn-1LE" firstAttribute="leading" secondItem="E9s-Z4-2PA" secondAttribute="leading" id="UfB-KK-gsq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="69D-ZY-nJ0" secondAttribute="trailing" constant="-10" id="ZbX-N8-MKW"/>
+                            <constraint firstItem="5gC-wn-1LE" firstAttribute="top" secondItem="uyy-d0-dJs" secondAttribute="bottom" constant="8" id="aiR-r2-5ah"/>
+                            <constraint firstItem="69D-ZY-nJ0" firstAttribute="leading" secondItem="NW3-Yb-Qwv" secondAttribute="leading" id="jWj-tc-4BZ"/>
+                            <constraint firstItem="kNH-3D-f75" firstAttribute="top" secondItem="5gC-wn-1LE" secondAttribute="bottom" id="pOy-m4-1Kq"/>
+                            <constraint firstItem="NW3-Yb-Qwv" firstAttribute="top" secondItem="69D-ZY-nJ0" secondAttribute="bottom" constant="8" symbolic="YES" id="pip-Im-uRE"/>
+                            <constraint firstItem="kNH-3D-f75" firstAttribute="top" secondItem="NW3-Yb-Qwv" secondAttribute="bottom" constant="584" id="uJB-Zq-RCU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryName" destination="69D-ZY-nJ0" id="pmR-Gp-v0n"/>
+                        <outlet property="songImage" destination="uyy-d0-dJs" id="nk0-Fx-lZw"/>
+                        <outlet property="songLyrics" destination="5gC-wn-1LE" id="Vp7-MW-7aI"/>
+                        <outlet property="songName" destination="NW3-Yb-Qwv" id="dL8-kB-3Fq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5e-kJ-XMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805.5999999999999" y="36.431784107946029"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pFp-8u-utc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s7Q-RS-DEG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pIN-3K-DAe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ge3-Gw-bSx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btM-CM-qCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="VIRTUSAPOLARIS-Logo.jpg" width="200" height="200"/>
+    </resources>
+</document>
